@@ -1,0 +1,20 @@
+csv_path: data/csv/
+rdata_path: data/rdata/
+sf_path: data/sf/
+raster_path: data/raster/
+speciesID: 3
+species_vector:
+- pine
+- spruce
+- birch
+municipID: 1
+municipOriginalIDs:
+- 1
+- 18
+- 13
+- 11
+municipalities:
+- Espoo
+- Joensuu
+- Lahti
+- Turku

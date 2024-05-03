@@ -1,0 +1,12 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Files
+data/
+code.txt
+scripts/test*.R
+scripts/runModTest*.R
