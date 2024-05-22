@@ -2,6 +2,7 @@ csv_path: data/csv/
 rdata_path: data/rdata/
 sf_path: data/sf/
 raster_path: data/raster/
+plot_path: data/plots/
 speciesID: 3
 species_vector:
 - pine

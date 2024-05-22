@@ -27,6 +27,8 @@ library(snow)
 library(stringr)
 library(raster)
 library(yaml)
+library(gtools)
+library(terra)
 
 
 
