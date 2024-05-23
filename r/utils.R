@@ -31,3 +31,22 @@ modify_yaml_settings <- function(config_path, ...) {
 
 
 
+loadRDataFile <- function(RDataFile) {
+  temp_env <- new.env()
+  obj <- get(load(RDataFile), temp_env)
+  return(obj)
+}
+
+
+
+
+join_n_dts <- function(n_dt, all_dt, by="maakuntaID", pixel_area=16*16) {
+  dt <- left_join(n_dt, all_dt, by = by)
+  dt[, N.y := NULL]
+  colnames(dt)[which(colnames(dt)=="N.x")] <- "N"
+  setcolorder(dt, colnames(all_dt))
+  dt$area <- dt$N*(pixel_area)/10000
+  return(dt)
+}
+
+

@@ -1,7 +1,8 @@
 source("scripts/settings.R")
 source("r/utils.R")
 
-run_script <- "scripts/process_private.R"
+# run_script <- "scripts/process_private.R"
+# run_script <- "scripts/private_public_dts.R"
 
 # Run script with different settings
 for(i in 1:length(config$municipOriginalIDs)){
