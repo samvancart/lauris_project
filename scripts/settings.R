@@ -29,6 +29,7 @@ library(raster)
 library(yaml)
 library(gtools)
 library(terra)
+library(testthat)
 
 
 

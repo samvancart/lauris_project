@@ -28,7 +28,16 @@ public_dt <- join_n_dts(public_n_dt, all_dt)
 
 
 
+# all_n_dt <- n_dt[, .(maakuntaID=maakuntaID, N=all_N)]
+# dt <- join_n_dts(all_n_dt, all_dt)
+# 
+# save(dt, file = paste0(all_dts_path, "/all_maakunta_", config$municipOriginalIDs[config$municipID], ".RData"))
 
+
+# # TEST
+# setorderv(all_dt,"segID")
+# setorderv(dt,"segID")
+# dt[!which(all_dt$N == dt$N)]
 
 
 

@@ -11,11 +11,9 @@ for(i in 1:length(config$municipOriginalIDs)){
   source(run_script)
 }
 
-
-
-
-
-
+# Modify with named vector
+ids <- c(municipID_2 = as.integer(1), speciesID = as.integer(3))
+modify_yaml_settings_vector(config_path, ids)
 
 
 
